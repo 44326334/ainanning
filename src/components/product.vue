@@ -13,6 +13,7 @@
 .warp{
   background: white;
   margin-top: 5px;
+  padding-bottom: 6rem;
   p{
     text-align: left;
     margin: 0;
@@ -40,16 +41,16 @@ export default {
       title: '产品展示',
       products: [
         {
-          url: require("../assets/logo.png")
+          url: require("../assets/product1.png")
         },
         {
-          url: require("../assets/logo.png")
+          url: require("../assets/product2.png")
         },
         {
-          url: require("../assets/logo.png")
+          url: require("../assets/product2.png")
         },
         {
-          url: require("../assets/logo.png")
+          url: require("../assets/product2.png")
         }
       ]
     }
