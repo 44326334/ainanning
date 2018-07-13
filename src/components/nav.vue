@@ -1,6 +1,6 @@
 <template>
   <div class="navWarp">
-    <div class="item" v-for="item in navs" :key="item.id" @click="goto(item.id)">
+    <div class="item" v-for="item in navs" :key="item.id" @click="goto(item.id,item.pathType)">
       <img :src="item.icon" width="50px" height="50px" />
       <p>{{item.name}}</p>
     </div>
@@ -14,7 +14,7 @@
     justify-content: space-around;
     background: white;
   }
-  .item-hover {
+  .item-active {
     background: rgb(244, 244, 244);
   }
   .item {
@@ -24,8 +24,8 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 1rem;
-    &:hover {
-      &:extend(.item-hover);
+    &:active {
+      &:extend(.item-active);
     }
   }
 </style>
@@ -38,29 +38,37 @@ export default {
         {
           id: 'product',
           icon: require("../assets/Group1.png"),
-          name: '产品说明'
+          name: '产品说明',
+          pathType: 'href'
         },
         {
           id: 'buy',
           icon: require("../assets/Group2.png"),
-          name: '购买教程'
+          name: '购买教程',
+          pathType: 'route'
         },
         {
           id: 'exchange',
           icon: require("../assets/Group3.png"),
-          name: '兑换教程'
+          name: '兑换教程',
+          pathType: 'route'
         },
         {
           id: 'detection',
           icon: require("../assets/Group4.png"),
-          name: '检测教程'
+          name: '检测教程',
+          pathType: 'route'
         }
       ]
     }
   },
   methods: {
-    goto (id) {
-      this.$router.push("./"+id);
+    goto (id,type) {
+      if(type === 'href'){
+        window.location.href = "http://devlopapp.unishep.cn:8080/coupons/index.html#/";
+      }else {
+        this.$router.push("./"+id);
+      }
     }
   }
 }
