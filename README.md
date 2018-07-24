@@ -1,6 +1,6 @@
 # ainanning
 
-> app
+> 项目测试效果预览地址: https://44326334.github.io/test/
 
 ## Build Setup
 
