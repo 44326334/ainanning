@@ -46,7 +46,10 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': require('../config/dev.env')
+      'process.env': require('../config/dev.env'),
+      'COUPONS_URL': '"http://devlopapp.unishep.cn:8080/coupons/"',
+      // 'DOMAIN': '"http://shop.unishep.cn/coupons"'
+      'DOMAIN': '"http://127.0.0.1:8023/coupons"'
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.

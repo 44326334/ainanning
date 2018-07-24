@@ -4,14 +4,15 @@
   </div>
 </template>
 
-<style lang="" scoped>
+<style lang="less" scoped>
 
 </style>
 
 <script>
 import HEADER from '@/components/header.vue'
+YBB.hybrid.navigation.hide();
 export default {
-  name: 'product',
+  name: 'buy',
   components: { HEADER },
   data () {
     return {

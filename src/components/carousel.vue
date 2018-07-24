@@ -18,13 +18,13 @@ export default {
     return {
       imgs: [
         {
-          url: require('../assets/img1.png')
+          url: require('../assets/img1.jpg')
         },
         {
-          url: require('../assets/img1.png')
+          url: require('../assets/img1.jpg')
         },
         {
-          url: require('../assets/img1.png')
+          url: require('../assets/img1.jpg')
         }
       ],
       warpHeight: null,

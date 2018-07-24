@@ -41,16 +41,16 @@ export default {
       title: '产品展示',
       products: [
         {
-          url: require("../assets/product1.png")
+          url: require("../assets/product1.jpg")
         },
         {
-          url: require("../assets/product2.png")
+          url: require("../assets/product2.jpg")
         },
         {
-          url: require("../assets/product2.png")
+          url: require("../assets/product2.jpg")
         },
         {
-          url: require("../assets/product2.png")
+          url: require("../assets/product2.jpg")
         }
       ]
     }

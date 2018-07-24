@@ -6,9 +6,11 @@ import router from './router'
 import store from './store'
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import VueClipboard from 'vue-clipboard2'
+import 'babel-polyfill'
 
 Vue.use(Mint)
-
+Vue.use(VueClipboard)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -18,6 +18,7 @@ import CAROUSEL from '@/components/carousel.vue'
 import NAV from '@/components/nav.vue'
 import PRODUCT from '@/components/product.vue'
 import TABBAR from '@/components/tabbar.vue'
+YBB.hybrid.navigation.hide();
 export default {
   name: 'index',
   components: {HEADER, CAROUSEL, NAV, PRODUCT, TABBAR},

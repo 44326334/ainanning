@@ -14,7 +14,7 @@
 </template>
 
 <style lang="less" scoped>
-.warp{
+.warp {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -34,6 +34,7 @@
 
 <script>
 import HEADER from '@/components/header.vue'
+YBB.hybrid.navigation.hide();
 export default {
   name: 'detection',
   components: { HEADER },
@@ -45,35 +46,35 @@ export default {
       detections: [
         {
           id: 1,
-          url: require('../../assets/1.png')
+          url: require('../../assets/1.jpg')
         },
         {
           id: 2,
-          url: require('../../assets/2.png')
+          url: require('../../assets/2.jpg')
         },
         {
           id: 3,
-          url: require('../../assets/3.png')
+          url: require('../../assets/3.jpg')
         },
         {
           id: 4,
-          url: require('../../assets/4.png')
+          url: require('../../assets/4.jpg')
         },
         {
           id: 5,
-          url: require('../../assets/5.png')
+          url: require('../../assets/5.jpg')
         },
         {
           id: 6,
-          url: require('../../assets/6-1.png')
+          url: require('../../assets/6-1.jpg')
         },
         {
           id: 7,
-          url: require('../../assets/7.png')
+          url: require('../../assets/7.jpg')
         },
         {
           id: 8,
-          url: require('../../assets/8.png')
+          url: require('../../assets/8.jpg')
         }
       ]
     }

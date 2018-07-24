@@ -39,7 +39,7 @@ export default {
           id: 'product',
           icon: require("../assets/Group1.png"),
           name: '产品说明',
-          pathType: 'href'
+          pathType: 'route'
         },
         {
           id: 'buy',
